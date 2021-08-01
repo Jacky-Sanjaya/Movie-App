@@ -1,6 +1,7 @@
 .modal-container {
   display: flex;
   overflow-y: scroll;
+  justify-content: center;
   scrollbar-width: none;
   flex-direction: column;
   text-align: center;
@@ -21,7 +22,7 @@
 .play2 {
   display: none;
 }
-.landscape-wrap:hover .black-screen2 {
+.black-screen2 {
   display: unset;
   background-color: #000;
   margin-top: 10px;
@@ -32,7 +33,7 @@
   height: 96%;
   transition: all 0.5s ease-in-out;
 }
-.landscape-wrap:hover .play2 {
+.play2 {
   display: unset;
   position: absolute;
   width: 12.5%;

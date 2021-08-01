@@ -44,7 +44,7 @@ export default function Series() {
 
   return (
     <>
-      <span className="pageTitle">Movies</span>
+      <span className="pageTitle">TV Series</span>
       <Genres
         type="tv"
         selectedGenres={selectedGenres}
