@@ -1,0 +1,152 @@
+.modal-container {
+  display: flex;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  flex-direction: column;
+  text-align: center;
+}
+.image-landscape {
+  border-radius: 10px;
+  width: 70%;
+  margin-top: 10px;
+}
+.landscape-wrap {
+  display: flex;
+  position: relative;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.black-screen2,
+.play2 {
+  display: none;
+}
+.landscape-wrap:hover .black-screen2 {
+  display: unset;
+  background-color: #000;
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 10px;
+  opacity: 0.5;
+  width: 80%;
+  height: 96%;
+  transition: all 0.5s ease-in-out;
+}
+.landscape-wrap:hover .play2 {
+  display: unset;
+  position: absolute;
+  width: 12.5%;
+  transition: all 0.5s ease-in-out;
+}
+.play {
+  display: none;
+}
+
+.image-portrait {
+  display: none;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.close-icon {
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  width: 5vw;
+  top: 0;
+  right: 0;
+  margin: 0px 5px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.tagline {
+  align-self: center;
+  font-size: 2.5vw;
+  margin: 10px 0;
+}
+.content-title {
+  margin-top: 10px;
+  font-size: 4vw;
+  font-weight: bold;
+}
+.content-description {
+  margin: 10px 0px;
+  font-size: 2vw;
+}
+.content-about {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 550px;
+}
+
+@media (min-width: 850px) {
+  .content-title {
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+  .image-landscape {
+    display: none;
+  }
+  .content-description {
+    margin: 10px 0px 15px 10px;
+    font-size: 1.7vw;
+    text-align: justify;
+  }
+  .modal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  .portrait-wrap {
+    width: 20vw;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .portrait-wrap:hover .black-screen {
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+  }
+  .play2,
+  .black-screen2 {
+    display: none;
+  }
+  .portrait-wrap:hover .play {
+    display: unset;
+    position: absolute;
+    opacity: 0.75;
+    width: 35%;
+    transition: all 0.5s ease-in;
+  }
+
+  .image-portrait {
+    display: flex;
+    width: 100%;
+    object-fit: contain;
+  }
+  .content-about {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 50%;
+  }
+  .tagline {
+    font-size: 2.25vw;
+    margin: 20px 0px;
+  }
+}

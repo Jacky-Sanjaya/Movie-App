@@ -1,0 +1,86 @@
+:root {
+  --white: #ffffff;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 375px;
+  max-height: 375px;
+  padding: 5px;
+  margin: 5px 5px;
+  background-color: #222d34;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.vote {
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: auto;
+  width: 1.75em;
+  height: 1.75em;
+  font-size: 1em;
+  background-color: #ffaa4c;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px #000;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.title {
+  font-size: 16px;
+  text-align: center;
+  color: var(--white);
+  text-overflow: ellipsis;
+}
+.subTitle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  color: var(--white);
+  padding: 0 2px;
+}
+
+.vote-secondary {
+  background-color: #f8485e;
+}
+.poster {
+  border-radius: 10px;
+  height: 300px;
+}
+.card-container:hover {
+  background-color: #fff;
+  --white: #000;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+  z-index: 99;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    width: 40%;
+    height: auto;
+    margin: 5px 5px;
+    font-size: 4vw;
+    max-height: none;
+  }
+  .poster {
+    width: 100%;
+    height: auto;
+  }
+  .title {
+    font-size: 4.5vw;
+    padding: 10px 0;
+  }
+  .subTitle {
+    font-size: 3vw;
+  }
+}

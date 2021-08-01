@@ -1,0 +1,48 @@
+* {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+.index {
+  background: url(./assets/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+.app {
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: rgba(26, 26, 26, 0.8);
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.pageTitle {
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25em;
+  padding: 4px;
+  font-weight: bold;
+  border-radius: 50px;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .pageTitle {
+    font-size: 4vw;
+    margin: 5px 0;
+  }
+  @media (max-width: 300px) {
+    .pageTitle {
+      margin: 2.5px 0;
+    }
+  }
+}

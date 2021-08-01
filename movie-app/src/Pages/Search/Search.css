@@ -1,0 +1,13 @@
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.searchField {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}

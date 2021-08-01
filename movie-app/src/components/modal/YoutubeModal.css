@@ -1,0 +1,22 @@
+.youtube-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube {
+  width: 80vw;
+  height: 70vh;
+}
+.close-icon {
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  width: 5vw;
+  top: 0;
+  right: 0;
+  margin: 0px 5px;
+  background-color: transparent;
+  border-color: transparent;
+}
