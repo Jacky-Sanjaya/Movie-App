@@ -10,7 +10,9 @@
 .carousel-img {
   border-radius: 10px;
   display: flex;
-  justify-content: space-around;
+  margin: 10px auto;
+  justify-content: center;
   width: 100%;
+  max-width: 100px;
   box-shadow: 0px 0px 5px black;
 }

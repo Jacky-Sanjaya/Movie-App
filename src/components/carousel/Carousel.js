@@ -49,6 +49,7 @@ const Gallery = ({ media_type, id }) => {
   return (
     <AliceCarousel
       autoPlay
+      animationDuration={1000}
       responsive={responsive}
       infinite
       disableDotsControls
