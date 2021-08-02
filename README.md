@@ -1,2 +1,2 @@
 # Movie-App
-#[jackymovieapp.netlify.app](jackymovieapp.netlify.app)
+#[jackymovieapp.netlify.app](https://jackymovieapp.netlify.app/)
